@@ -17,3 +17,9 @@ local.properties
 local.properties
 settings.gradle
 gradle
+Build.gradle
+gradle.properties
+gradlew
+gradlew.bat
+
+
