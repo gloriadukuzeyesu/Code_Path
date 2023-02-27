@@ -13,4 +13,11 @@
     <string name="guess_1check">Guess#1Check</string>
     <string name="guess1">Guess#1</string>
     <string name="target" />
+    <string name="choice2" />
+    <string name="choice1" />
+    <string name="option3" />
+    <string name="option5" />
+    <string name="guess3">Text5</string>
+    <string name="guess3_check" />
+    <string name="geeusse3" />
 </resources>
