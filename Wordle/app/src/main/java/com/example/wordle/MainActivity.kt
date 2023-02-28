@@ -25,19 +25,19 @@ class MainActivity : AppCompatActivity() {
         val guess3Check = findViewById<TextView>(R.id.guess3Check)
         val submitButton = findViewById<TextView>(R.id.button)
         val target = findViewById<TextView>(R.id.target)
-        var numGuesses = 0;
+        var numberOfGuesses = 0;
         val guessFields = listOf(guess1, guess2, guess3)
         val resulFields = listOf(guess1Check, guess2Check, guess3Check)
 
         // set the listener on the button
         submitButton.setOnClickListener {
-            if (numGuesses < 3) {
+            if (numberOfGuesses < 3) {
                 val guess = textInput.text.toString()
-                guessFields[numGuesses].text = guess
+                guessFields[numberOfGuesses].text = guess
                 Log.d("GD", wordToGuess)
-                resulFields[numGuesses].text = checkGuess(guess, wordToGuess)
-                numGuesses++
-                if (numGuesses == 3) {
+                resulFields[numberOfGuesses].text = checkGuess(guess, wordToGuess)
+                numberOfGuesses++
+                if (numberOfGuesses == 3) {
                     Toast.makeText(this, "You've reached the number of guesses!", Toast.LENGTH_SHORT)
                         .show()
                     target.text = wordToGuess
