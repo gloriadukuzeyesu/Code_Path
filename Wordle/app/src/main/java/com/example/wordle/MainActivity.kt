@@ -25,6 +25,7 @@ class MainActivity : AppCompatActivity() {
         val guess3Check = findViewById<TextView>(R.id.guess3Check)
         val submitButton = findViewById<TextView>(R.id.button)
         val target = findViewById<TextView>(R.id.target)
+
         var numberOfGuesses = 0;
         val guessFields = listOf(guess1, guess2, guess3)
         val resulFields = listOf(guess1Check, guess2Check, guess3Check)
