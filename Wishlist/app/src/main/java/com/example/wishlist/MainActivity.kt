@@ -1,5 +1,4 @@
 package com.example.wishlist
-
 import android.annotation.SuppressLint
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -11,8 +10,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
 class MainActivity : AppCompatActivity() {
-     private lateinit var items: ArrayList<itemDescription>
-
+    private lateinit var items: ArrayList<itemDescription>
     @SuppressLint("InflateParams")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -21,18 +19,12 @@ class MainActivity : AppCompatActivity() {
         val submitButton = findViewById<Button>(R.id.submitButton)
         // inflate the item_description layout to access its views
         items = ArrayList()
-        Log.d("GD", "Test1")
-
         // create an adapter
         val adapter = itemsAdapter(items)
-        Log.d("GD", "Test2")
-
         // Attach the adapter to the recyclerview to populate items
         rvWishList.adapter = adapter
-
         // Set layout manager to position the items
         rvWishList.layoutManager = LinearLayoutManager(this)
-
         submitButton.setOnClickListener {
             val itemNameET = findViewById<EditText>(R.id.itemName_ET)
             val urlET = findViewById<EditText>(R.id.urlET)
@@ -48,8 +40,5 @@ class MainActivity : AppCompatActivity() {
             Log.d("GD", "Test6")
 
         }
-
-
     }
-
 }
