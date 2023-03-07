@@ -11,8 +11,11 @@
         android:id="@+id/itemListRV"
         android:layout_width="409dp"
         android:layout_height="729dp"
+        android:scrollbarSize="18dp"
+        app:fastScrollEnabled="true"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
 
     <EditText
         android:id="@+id/itemName_ET"
@@ -55,11 +58,11 @@
         android:autofillHints="url"
         android:ems="10"
         android:hint="@string/ex_www_example_com"
+        android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintWidth_default="percent"
         app:layout_constraintWidth_percent="0.6"
-        android:inputType="textPersonName"
         tools:ignore="TextFields" />
 
     <Button
@@ -73,6 +76,6 @@
         app:layout_constraintHorizontal_bias="0.906"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintWidth_default="percent"
-        app:layout_constraintWidth_percent="0.4"/>
+        app:layout_constraintWidth_percent="0.4" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

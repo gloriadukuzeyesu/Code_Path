@@ -6,6 +6,7 @@ import android.util.Log
 import android.view.View
 import android.widget.Button
 import android.widget.EditText
+import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
@@ -25,6 +26,18 @@ class MainActivity : AppCompatActivity() {
         rvWishList.adapter = adapter
         // Set layout manager to position the items
         rvWishList.layoutManager = LinearLayoutManager(this)
+
+       //  Set up a ScrollableLayoutManager for the RecyclerView
+        rvWishList.layoutManager = LinearLayoutManager(this)
+
+        // Set up a divider for the RecyclerView
+        val dividerItemDecoration = DividerItemDecoration(rvWishList.context, rvWishList.scrollState)
+        rvWishList.addItemDecoration(dividerItemDecoration)
+
+
+
+
+
         submitButton.setOnClickListener {
             val itemNameET = findViewById<EditText>(R.id.itemName_ET)
             val urlET = findViewById<EditText>(R.id.urlET)
