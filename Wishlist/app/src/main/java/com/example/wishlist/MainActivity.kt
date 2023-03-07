@@ -23,19 +23,15 @@ class MainActivity : AppCompatActivity() {
         items = ArrayList()
         Log.d("GD", "Test1")
 
-
         // create an adapter
         val adapter = itemsAdapter(items)
         Log.d("GD", "Test2")
 
         // Attach the adapter to the recyclerview to populate items
         rvWishList.adapter = adapter
-        Log.d("GD", "Test3")
 
         // Set layout manager to position the items
         rvWishList.layoutManager = LinearLayoutManager(this)
-        Log.d("GD", "Test4")
-
 
         submitButton.setOnClickListener {
             val itemNameET = findViewById<EditText>(R.id.itemName_ET)
