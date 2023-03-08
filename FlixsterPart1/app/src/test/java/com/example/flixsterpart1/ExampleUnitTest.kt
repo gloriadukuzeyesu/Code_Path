@@ -1,4 +1,4 @@
-package com.example.nytimesbestsellingbooks
+package com.example.flixsterpart1
 
 import org.junit.Test
 
