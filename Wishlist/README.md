@@ -20,7 +20,7 @@ Here's a walkthrough of implemented user stories:
 
 
 
-<img src="wish.gif" style="zoom:60%;" />
+<img src="wish.gif" width="210" height="400" />
 
 
 GIF created with ...  
