@@ -1,14 +1,18 @@
 package com.example.flixsterpart1
 
+import android.os.Build
 import android.view.LayoutInflater
+import android.view.RoundedCorner
 import android.view.TextureView
 import android.view.View
 import android.view.ViewGroup
 import android.widget.EditText
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.annotation.RequiresApi
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
+import com.bumptech.glide.load.resource.bitmap.RoundedCorners
 
 //    private val mListener: onListFragmentInterationListener?
 // when the movie is clicked
@@ -37,6 +41,7 @@ class MovieRecyclerViewAdapter(
         return MovieViewHolder(movieView)
     }
 
+
     override fun onBindViewHolder(holder: MovieViewHolder, position: Int) {
         val movie = movies[position]
         //  holder.mItem = movie
@@ -44,9 +49,12 @@ class MovieRecyclerViewAdapter(
         holder.mMovieDescription.text = movie.description
         // load the image using Glide
         val restOfUrlForImage = "https://image.tmdb.org/t/p/w500/"
+        val radius = 10
+        val margin = 10
+        // .transform(RoundedCorners(radius))
+        //.transform(RoundedCorners(radius, margin))
         Glide.with(holder.mView)
             .load(restOfUrlForImage.plus(movie.movieImageUl))
-            .centerInside()
             .into(holder.mMoviePoster)
     }
 
