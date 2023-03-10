@@ -29,7 +29,9 @@ Here's a walkthrough of implemented user stories:
 
 
 
-<img src="wordle.gif" style="zoom:60%;" />
+<img src="wordle.gif" width="250" heigh="300"/>
+
+
 
 
 
