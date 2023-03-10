@@ -31,7 +31,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src="FlixsterPart1WalkThrough.gif" style="zoom:40%"/>
+<img src="FlixsterPart1WalkThrough.gif" width="300" height="300"/>
 
 
 
