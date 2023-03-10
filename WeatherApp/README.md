@@ -11,4 +11,4 @@ You may or may not type in the country name.
 
 
 
-<img src="weather.gif" style="zoom:60%;" />
+<img src="weather.gif" width="200" height="450" />
