@@ -2,7 +2,7 @@
 
 Submitted by: **Gloria Dukuzeyesu**
 
-**Flixster** is a movie browsing app that allows users to browse ... [TODO] 
+**Flixster** is a movie browsing app that allows users to browse
 
 Time spent: 8 hours spent in total
 
