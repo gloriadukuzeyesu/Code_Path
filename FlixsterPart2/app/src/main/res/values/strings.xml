@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">FlixsterPart2</string>
+    <string name="imageofperson">imageOfPerson</string>
+    <string name="trending_people_today">Trending People Today</string>
+    <string name="actorImage">actorImage</string>
+    <string name="known_for">Known For:</string>
+    <string name="posterImage">posterImage</string>
+    <string name="home">Home</string>
+</resources>
