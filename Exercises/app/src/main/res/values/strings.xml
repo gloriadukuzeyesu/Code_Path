@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">learningIntents</string>
+    <string name="sign_in">Sign in</string>
+    <string name="welcome_to_second_activity">Welcome to Second Activity</string>
+</resources>

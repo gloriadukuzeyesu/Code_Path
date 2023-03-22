@@ -4,6 +4,32 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@android:color/darker_gray"
     tools:context=".SecondActivity">
 
+
+    <TextView
+        android:id="@+id/textViewTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="396dp"
+        android:text="@string/welcome_to_second_activity"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/proNameIdTV"
+        android:layout_width="119dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="144dp"
+        android:layout_marginBottom="272dp"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="ProductName" />
 </androidx.constraintlayout.widget.ConstraintLayout>
