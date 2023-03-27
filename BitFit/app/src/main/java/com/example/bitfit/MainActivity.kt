@@ -38,10 +38,6 @@ class MainActivity : AppCompatActivity() {
         }
 
         lifecycleScope.launch() {
-//            val foodType: String? = getIntent().getStringExtra("foodType")
-//            val amountOfCalories: String? = getIntent().getStringExtra("amountOfCalories")
-
-
             (application as NutritionApplication).db.nutritionDao().getAll()
                 .collect { dataBaseList ->
                     dataBaseList.map { entity ->
@@ -52,25 +48,6 @@ class MainActivity : AppCompatActivity() {
                         nutritionAdapter.notifyDataSetChanged()
                     }
                 }
-
-
-//            if (foodType != null && amountOfCalories != null) {
-//
-//                (application as NutritionApplication).db.nutritionDao().getAll()
-//                    .collect { dataBaseList ->
-//                        dataBaseList.map { entity ->
-//                            NutritionData(entity.typeOfFood, entity.amountOfCalories)
-//                        }.also { mappedList ->
-//                            savedNutritionData.clear()
-//                            savedNutritionData.addAll(mappedList)
-//                            nutritionAdapter.notifyDataSetChanged()
-//                        }
-//                    }
-//
-//
-//            } else {
-//                Log.e("Error", "Errors")
-//            }
 
         }
     }
