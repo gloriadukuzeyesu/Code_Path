@@ -37,8 +37,6 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
 
-
-
         super.onCreate(savedInstanceState)
 
         binding = ActivityMainBinding.inflate(layoutInflater)
@@ -78,27 +76,27 @@ class MainActivity : AppCompatActivity() {
                         json.jsonObject.toString()
                     )
                     // TODO: Save the articles and reload the screen
-                   /* parsedJson.response?.docs?.let { list ->
-//                        articles.addAll(list)
-                        // Reload the screen
+                    /* parsedJson.response?.docs?.let { list ->
+ //                        articles.addAll(list)
+                         // Reload the screen
 
-                        lifecycleScope.launch(IO) {
-                            articleAdapter.notifyDataSetChanged()
-                            (application as ArticleApplication).db.articleDao().deleteAll()
-                            (application as ArticleApplication).db.articleDao().insertAll(list.map {
-                                ArticleEntity(
-                                    headline = it.headline?.main,
-                                    articleAbstract = it.abstract,
-                                    byline = it.byline?.original,
-                                    mediaImageUrl = it.mediaImageUrl
-                                )
-                            })
-
-
-                        }
+                         lifecycleScope.launch(IO) {
+                             articleAdapter.notifyDataSetChanged()
+                             (application as ArticleApplication).db.articleDao().deleteAll()
+                             (application as ArticleApplication).db.articleDao().insertAll(list.map {
+                                 ArticleEntity(
+                                     headline = it.headline?.main,
+                                     articleAbstract = it.abstract,
+                                     byline = it.byline?.original,
+                                     mediaImageUrl = it.mediaImageUrl
+                                 )
+                             })
 
 
-                    }*/
+                         }
+
+
+                     }*/
                     //TODO remove the  <articleAdapter.notifyDataSetChanged()>
                     parsedJson.response?.docs?.let { list ->
                         lifecycleScope.launch(IO) {
@@ -113,9 +111,6 @@ class MainActivity : AppCompatActivity() {
                             })
                         }
                     }
-
-
-
 
 
                 } catch (e: JSONException) {

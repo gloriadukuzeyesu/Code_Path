@@ -6,7 +6,6 @@ import androidx.room.Query
 import kotlinx.coroutines.flow.Flow
 import com.codepath.articlesearch.ArticleEntity as ArticleEntity1
 
-
 @Dao
 interface ArticleDao {
     @Query("SELECT * FROM article_table")
