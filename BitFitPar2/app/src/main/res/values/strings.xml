@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">BitFit</string>
+    <string name="records">Records</string>
+    <string name="calories">Calories</string>
+    <string name="record_new_food">Record new food</string>
+    <string name="log">Log</string>
+    <string name="Log">Log</string>
+    <string name="dashboard">DashBoard</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="average_calories">Average Calories</string>
+    <string name="mini_calories">Mini Calories</string>
+    <string name="max_calories">Max Calories</string>
+</resources>
