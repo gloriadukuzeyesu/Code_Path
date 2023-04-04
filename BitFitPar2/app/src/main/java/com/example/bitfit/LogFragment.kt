@@ -34,12 +34,6 @@ class LogFragment : Fragment() {
 //        Inflate a new view hierarchy from the specified xml resource
         val view = inflater.inflate(R.layout.fragment_log, container, false)
 
-        val addNewFoodBtn = requireActivity().findViewById<Button>(R.id.addNewFoodBtn)
-
-        addNewFoodBtn.setOnClickListener {
-            (requireActivity() as MainActivity).onAddNewFoodClicked()
-        }
-
         // Add these configurations for the recyclerView and to configure the adapter
         val layoutMan = LinearLayoutManager(context)
         nutritionRecyclerView = view.findViewById(R.id.food_list_recy_view)
@@ -60,6 +54,11 @@ class LogFragment : Fragment() {
                     }
                 }
 
+        }
+
+        val addNewFoodBtn = requireActivity().findViewById<Button>(R.id.addNewFoodBtn)
+        addNewFoodBtn.setOnClickListener {
+            (requireActivity() as MainActivity).onAddNewFoodClicked()
         }
 
         return view // Inflate the layout for this fragment

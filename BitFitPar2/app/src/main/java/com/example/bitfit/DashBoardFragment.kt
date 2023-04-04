@@ -1,6 +1,7 @@
 package com.example.bitfit
 
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -71,11 +72,6 @@ class DashBoardFragment : Fragment() {
                 val average = if (recordCount > 0) totalCalories / recordCount else 0
 
                 // Set the values of the TextViews to display the calculated values
-//                averageCal.text = average.toString()
-//                minCal.text = minCalories.toString()
-//                maxCal.text = maxCalories.toString()
-
-                // Set the values of the TextViews to display the calculated values
                 averageCal.text = if (recordCount > 0) average.toString() else ""
                 minCal.text = if (minCalories != Int.MAX_VALUE) minCalories.toString() else ""
                 maxCal.text = if (maxCalories != Int.MIN_VALUE) maxCalories.toString() else ""
@@ -86,8 +82,21 @@ class DashBoardFragment : Fragment() {
             lifecycleScope.launch {
                 withContext(Dispatchers.IO) {
                     nutritionDao.deleteAll()
+
+                    activity?.runOnUiThread {
+                        averageCal.text = ""
+                        minCal.text = ""
+                        maxCal.text = ""
+                    }
                 }
             }
+        }
+
+
+        // handle the add new button from the DashBoard fragment
+        val addNewFoodBtn = requireActivity().findViewById<Button>(R.id.addNewFoodBtn)
+        addNewFoodBtn.setOnClickListener {
+            (requireActivity() as MainActivity).onAddNewFoodClicked()
         }
     }
 
@@ -97,8 +106,6 @@ class DashBoardFragment : Fragment() {
             return DashBoardFragment()
         }
     }
-
-
 
 
 }
