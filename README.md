@@ -13,7 +13,7 @@ I've put together a list of walk-throughs for some of my projects in action.
 
 [Flixster Part2](https://github.com/gloriadukuzeyesu/Code_Path/tree/main/FlixsterPart2)
 
-<img src="FlixsterPart2/flixsterPart2.gif" width="380" height="450"/>
+<img src="FlixsterPart2/flixsterPart2.gif" width="280" height="450"/>
 
 
 [Weather](https://github.com/gloriadukuzeyesu/Code_Path/tree/main/WeatherApp)
