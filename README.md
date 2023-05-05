@@ -6,16 +6,13 @@ Hi There! I'm Gloria, and I am excited to share with you the Android application
 
 I've put together a list of walk-throughs for some of my projects in action. 
 
-[Flixster](https://github.com/gloriadukuzeyesu/Code_Path/tree/main/FlixsterPart1)
-
-
-
-
+[Flixster part 1](https://github.com/gloriadukuzeyesu/Code_Path/tree/main/FlixsterPart1)
 
 <img src="FlixsterPart1/FlixsterPart1WalkThrough.gif" width="300" height="300"/>
 
+[Flixster Part2] (https://github.com/gloriadukuzeyesu/Code_Path/tree/main/FlixsterPart2)
 
-
+<img src="FlixsterPart2/flixsterPart2.gif" width="300" height="300"/>
 
 
 [Weather](https://github.com/gloriadukuzeyesu/Code_Path/tree/main/WeatherApp)
