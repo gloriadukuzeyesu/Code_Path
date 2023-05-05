@@ -10,9 +10,9 @@ I've put together a list of walk-throughs for some of my projects in action.
 
 <img src="FlixsterPart1/FlixsterPart1WalkThrough.gif" width="300" height="300"/>
 
-[Flixster Part2] (https://github.com/gloriadukuzeyesu/Code_Path/tree/main/FlixsterPart2)
+[Flixster Part2](https://github.com/gloriadukuzeyesu/Code_Path/tree/main/FlixsterPart2)
 
-<img src="FlixsterPart2/flixsterPart2.gif" width="300" height="300"/>
+<img src="FlixsterPart2/flixsterPart2.gif" width="300" height="400"/>
 
 
 [Weather](https://github.com/gloriadukuzeyesu/Code_Path/tree/main/WeatherApp)
